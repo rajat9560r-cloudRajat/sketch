@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketchpad — Drawing App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>🎨 Sketchpad</h1>
+
+    <!-- Toolbar -->
+    <section class="toolbar">
+      <div class="colors" id="colors"></div>
+      <input type="color" id="color-picker" value="#1f1f1f" title="Custom color">
+
+      <label class="size-control">
+        Brush
+        <input type="range" id="size" min="1" max="40" value="5">
+        <span id="size-label">5px</span>
+      </label>
+
+      <button id="eraser">🧽 Eraser</button>
+      <button id="undo">↩️ Undo</button>
+      <button id="clear">🗑️ Clear</button>
+      <button id="save">💾 Save PNG</button>
+    </section>
+
+    <!-- Drawing area -->
+    <canvas id="canvas"></canvas>
+    <p class="hint">Draw with your mouse or finger ✍️</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
